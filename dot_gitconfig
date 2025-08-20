@@ -1,0 +1,17 @@
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+[pull]
+	rebase = true
+[init]
+	defaultBranch = main
+[user]
+	name = Michel Mattos
+	email = 7696411+michelmattos@users.noreply.github.com
+	signingkey = ~/.ssh/github.pub
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
