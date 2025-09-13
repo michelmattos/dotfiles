@@ -5,10 +5,13 @@
 ---@type LazySpec
 return {
   "AstroNvim/astrocommunity",
-  { import = "astrocommunity.pack.lua" },
-  -- import/override with your plugins folder
+  { import = "astrocommunity.pack.fish" },
   { import = "astrocommunity.pack.html-css" },
-  { import = "astrocommunity.pack.typescript" },
+  { import = "astrocommunity.pack.jj" },
+  { import = "astrocommunity.pack.lua" },
+  { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.tailwindcss" },
+  { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.go" },
+  { import = "astrocommunity.recipes.ai" },
 }
