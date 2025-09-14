@@ -1,0 +1,8 @@
+{{ if eq .chezmoi.os "linux" -}}
+#!/bin/bash
+
+if ! pacman -Q fish >/dev/null 2>&1; then
+  echo "Fish shell not found. Installing..."
+  sudo pacman -S fish
+fi
+{{ end -}}
