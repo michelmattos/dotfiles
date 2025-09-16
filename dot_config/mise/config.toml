@@ -9,5 +9,6 @@ bun = true
 
 [tools]
 bun = "latest"
+go = "latest"
 node = "latest"
 "npm:@anthropic-ai/claude-code" = "latest"
