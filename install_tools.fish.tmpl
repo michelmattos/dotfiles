@@ -1,0 +1,39 @@
+#!/usr/bin/env fish
+
+echo "Installing additional tools and applications..."
+
+# TPM (Tmux Plugin Manager)
+if not test -d ~/.config/tmux/plugins/tpm
+    echo "Installing TPM..."
+    git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
+else
+    echo "TPM is already installed."
+end
+
+{{ if eq .chezmoi.os "linux" -}}
+# Linux-specific tools
+echo "Installing Linux-specific tools..."
+if not pacman -Q tree-sitter-cli >/dev/null 2>&1
+    echo "Tree-sitter CLI not found. Installing..."
+    sudo pacman -S tree-sitter-cli
+else
+    echo "Tree-sitter CLI is already installed."
+end
+
+if not pacman -Q jujutsu >/dev/null 2>&1
+    echo "Jujutsu not found. Installing..."
+    sudo pacman -S jujutsu
+else
+    echo "Jujutsu is already installed."
+end
+
+if not pacman -Q lazyjj >/dev/null 2>&1
+    echo "Lazyjj not found. Installing..."
+    sudo pacman -S lazyjj
+else
+    echo "Lazyjj is already installed."
+end
+
+{{ end -}}
+
+echo "All tools installed successfully!"

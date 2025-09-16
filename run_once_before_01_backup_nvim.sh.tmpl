@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+{{ if eq .chezmoi.os "linux" -}}
+echo "Backing up existing Neovim configurations (one-time only)..."
+epoch_time=$(date +%s)
+
+if [ -d ~/.config/nvim ]; then
+    mv ~/.config/nvim ~/.config/nvim.bak.$epoch_time
+    echo "Backed up ~/.config/nvim to ~/.config/nvim.bak.$epoch_time"
+fi
+
+if [ -d ~/.local/share/nvim ]; then
+    mv ~/.local/share/nvim ~/.local/share/nvim.bak.$epoch_time
+    echo "Backed up ~/.local/share/nvim to ~/.local/share/nvim.bak.$epoch_time"
+fi
+
+if [ -d ~/.local/state/nvim ]; then
+    mv ~/.local/state/nvim ~/.local/state/nvim.bak.$epoch_time
+    echo "Backed up ~/.local/state/nvim to ~/.local/state/nvim.bak.$epoch_time"
+fi
+
+if [ -d ~/.cache/nvim ]; then
+    mv ~/.cache/nvim ~/.cache/nvim.bak.$epoch_time
+    echo "Backed up ~/.cache/nvim to ~/.cache/nvim.bak.$epoch_time"
+fi
+
+echo "Neovim backup completed."
+{{ end -}}

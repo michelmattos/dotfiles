@@ -1,0 +1,27 @@
+{{ if eq .chezmoi.os "linux" -}}
+#!/bin/bash
+# install_tools.fish.tmpl hash: {{ include "install_tools.fish.tmpl" | sha256sum }}
+
+echo "Installing essential tools..."
+
+# Install fish shell first (required for secondary script)
+if ! pacman -Q fish >/dev/null 2>&1; then
+  echo "Fish shell not found. Installing..."
+  sudo pacman -S fish
+  echo "Setting fish as the default shell..."
+  chsh -s /usr/bin/fish
+else
+  echo "Fish shell is already installed."
+fi
+
+# Install Homebrew
+if ! command -v brew >/dev/null 2>&1; then
+  echo "Homebrew not found. Installing..."
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+else
+  echo "Homebrew is already installed."
+fi
+
+# Run secondary fish script for other tools
+chezmoi execute-template --file "{{ .chezmoi.sourceDir }}/install_tools.fish.tmpl" | fish
+{{ end -}}
