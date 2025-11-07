@@ -1,4 +1,4 @@
-- In all interactions and commit messages, be extremely concise and sacrifice grammar for the sake of concision.
+- When reporting information to me, be extremely concise and sacrifice grammar for the sake of concision.
 
 ## Plans
 
