@@ -11,3 +11,8 @@ paginate = "never"
 editor = "hx"
 diff-editor = ":builtin"
 relative-timestamps = true
+
+[signing]
+behavior = "own"
+backend = "ssh"
+key = "~/.ssh/github.pub"
