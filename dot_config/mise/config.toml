@@ -1,0 +1,8 @@
+[settings]
+npm.package_manager = "bun"
+
+[tools]
+uv = "latest"
+node = "latest"
+bun = "latest"
+"npm:eas-cli" = "latest"

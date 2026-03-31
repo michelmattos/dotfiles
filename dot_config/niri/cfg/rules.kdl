@@ -1,0 +1,41 @@
+// ────────────── Window Rules ──────────────
+// https://github.com/YaLTeR/niri/wiki/Configuration:-Window-Rules
+
+// Open the Firefox picture-in-picture player as floating by default.
+window-rule {
+    match app-id=r#"firefox$"# title="^Picture-in-Picture$"
+    open-floating true
+}
+
+// Oculante image viewer: open maximized
+window-rule {
+    match app-id=r#"^oculante$"#
+    open-maximized true
+}
+
+// Android Emulator toolbar: force tiling instead of floating
+window-rule {
+    match app-id="Emulator" title="^Emulator$"
+    open-floating false
+}
+
+// Android Emulator: lock window size
+window-rule {
+    match app-id="Emulator" title="^Android Emulator"
+    min-width 472
+    max-width 472
+    min-height 840
+    max-height 840
+}
+
+// Rounded corners for all windows
+window-rule {
+    geometry-corner-radius 6
+    clip-to-geometry true
+}
+
+// Noctalia wallpaper layer rule
+layer-rule {
+    match namespace="^noctalia-wallpaper*"
+    place-within-backdrop true
+}

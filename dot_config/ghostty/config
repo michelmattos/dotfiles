@@ -1,0 +1,20 @@
+# Working directory inheritance
+window-inherit-working-directory = true
+
+# Font configuration
+font-family = JetBrainsMono Nerd Font
+font-size = 11
+
+# Theme
+theme = noctalia
+
+# Shell integration
+shell-integration = fish
+shell-integration-features = no-cursor,sudo,title
+
+# Disable close confirmation dialog
+confirm-close-surface = false
+
+
+# Balance extra padding evenly across all edges
+window-padding-balance = true

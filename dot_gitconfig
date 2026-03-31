@@ -1,0 +1,13 @@
+[credential "https://github.com"]
+	helper = 
+	helper = !/home/linuxbrew/.linuxbrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/home/linuxbrew/.linuxbrew/bin/gh auth git-credential
+[user]
+	name = Michel Mattos
+	email = 7696411+michelmattos@users.noreply.github.com
+[init]
+	defaultBranch = main
+[pull]
+	rebase = true
