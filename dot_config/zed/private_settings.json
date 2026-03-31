@@ -1,4 +1,12 @@
 {
+  "agent_servers": {
+    "claude-acp": {
+      "type": "registry"
+    },
+    "codex-acp": {
+      "type": "registry"
+    }
+  },
   "theme": {
     "mode": "system",
     "light": "Noctalia Light",
