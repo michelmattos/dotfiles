@@ -1,0 +1,3 @@
+#!/bin/sh
+# Regenerate ~/pkglist.txt with only user-added packages (excluding CachyOS base)
+comm -23 <(pacman -Qqe | sort) <(sort ~/.config/pacman/calamares-base.txt) > ~/pkglist.txt
