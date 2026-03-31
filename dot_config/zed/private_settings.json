@@ -1,0 +1,12 @@
+{
+  "theme": {
+    "mode": "system",
+    "light": "Noctalia Light",
+    "dark": "Noctalia Dark"
+  },
+  "telemetry": {
+    "diagnostics": true,
+    "metrics": false
+  },
+  "vim_mode": true
+}
