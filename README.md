@@ -30,13 +30,3 @@ chezmoi re-add
 chezmoi apply
 ```
 
-## What's managed
-
-- **Shell**: fish (config, functions, conf.d)
-- **Editors**: neovim (AstroNvim), helix, zed
-- **Terminals**: ghostty
-- **VCS**: git, jujutsu, lazygit, gh
-- **Desktop**: niri, noctalia theme, btop
-- **Dev tools**: mise, ssh
-- **Browser**: zen (policies)
-- **Packages**: `pkglist.txt` (user-added, excludes CachyOS base)
