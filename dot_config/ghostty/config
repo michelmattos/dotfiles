@@ -15,6 +15,5 @@ shell-integration-features = no-cursor,sudo,title
 # Disable close confirmation dialog
 confirm-close-surface = false
 
-
 # Balance extra padding evenly across all edges
 window-padding-balance = true
