@@ -16,5 +16,6 @@
     "diagnostics": true,
     "metrics": false
   },
-  "vim_mode": true
+  "vim_mode": true,
+  "buffer_font_family": "Berkeley Mono Variable"
 }
