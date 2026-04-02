@@ -1,3 +1,5 @@
+appimagelauncher
+appimagetool-bin
 bind
 biome
 chezmoi
@@ -15,6 +17,7 @@ lazyjj
 libayatana-appindicator
 lua-language-server
 mise
+mpv
 neovim
 nwg-look
 openai-codex
