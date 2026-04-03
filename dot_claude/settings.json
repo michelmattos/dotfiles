@@ -15,6 +15,7 @@
       "autoUpdate": true
     }
   },
-  "effortLevel": "high",
-  "skipDangerousModePermissionPrompt": true
+  "effortLevel": "medium",
+  "skipDangerousModePermissionPrompt": true,
+  "model": "sonnet"
 }
