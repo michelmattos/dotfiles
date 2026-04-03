@@ -13,8 +13,8 @@
         default-column-width { proportion 0.5; }
 
         struts {
-            left 2
-            right 2
+            left 0
+            right 0
             top -4
             bottom 2
         }
