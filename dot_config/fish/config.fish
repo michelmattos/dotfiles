@@ -6,5 +6,4 @@ source /usr/share/cachyos-fish-config/cachyos-config.fish
 #    # smth smth
 #end
 
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv fish)"
 mise activate fish | source
