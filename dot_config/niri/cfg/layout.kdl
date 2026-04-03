@@ -1,5 +1,5 @@
     layout {
-        gaps 8
+        gaps 3
         center-focused-column "never"
 
         background-color "transparent" // <- needed for noctalia-shell to set wallpaper
@@ -13,9 +13,9 @@
         default-column-width { proportion 0.5; }
 
         struts {
-            left 0
-            right 0
-            top -4
+            left 2
+            right 2
+            top -2
             bottom 2
         }
     }

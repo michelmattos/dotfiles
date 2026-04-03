@@ -1,0 +1,16 @@
+#!/bin/sh
+echo "[sddm-autologin] Configuring SDDM auto-login for {{ .chezmoi.username }}..."
+
+sudo mkdir -p /etc/sddm.conf.d
+sudo tee /etc/sddm.conf.d/autologin.conf > /dev/null << 'EOF'
+[Autologin]
+User={{ .chezmoi.username }}
+Session=niri
+Relogin=false
+EOF
+
+echo "[sddm-autologin] Adding {{ .chezmoi.username }} to autologin group..."
+sudo groupadd -r autologin 2>/dev/null || true
+sudo gpasswd -a {{ .chezmoi.username }} autologin
+
+echo "[sddm-autologin] Done."

@@ -34,6 +34,23 @@ window-rule {
     clip-to-geometry true
 }
 
+// Global window opacity
+window-rule {
+    opacity 0.9
+}
+
+// Focused window opacity
+window-rule {
+    match is-focused=true
+    opacity 0.98
+}
+
+// Zen browser: no opacity
+window-rule {
+    match app-id=r#"^zen$"#
+    opacity 1.0
+}
+
 // Noctalia wallpaper layer rule
 layer-rule {
     match namespace="^noctalia-wallpaper*"
