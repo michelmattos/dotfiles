@@ -1,3 +1,4 @@
 #!/bin/sh
 # policies.json hash: {{ include "dot_config/zen-browser/policies.json" | sha256sum }}
+sudo mkdir -p /opt/zen-browser-bin/distribution
 sudo cp ~/.config/zen-browser/policies.json /opt/zen-browser-bin/distribution/policies.json
