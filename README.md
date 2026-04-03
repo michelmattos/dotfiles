@@ -11,6 +11,15 @@ chezmoi apply
 
 This will clone the repo, apply all dotfiles, install packages from `pkglist.txt`, and set up the pacman hook and Zen Browser policies.
 
+After SSH is configured, install wallpapers and fonts from the private usercontent repo:
+
+```sh
+ssh-add ~/.ssh/github
+~/.config/usercontent/sync.sh
+```
+
+Subsequent `chezmoi apply` runs will notify you if the usercontent repo has new content.
+
 ## Day-to-day usage
 
 ```sh
