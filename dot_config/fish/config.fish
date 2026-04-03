@@ -7,3 +7,5 @@ source /usr/share/cachyos-fish-config/cachyos-config.fish
 #end
 
 mise activate fish | source
+
+set -x SSH_AUTH_SOCK "$XDG_RUNTIME_DIR/gcr/ssh"

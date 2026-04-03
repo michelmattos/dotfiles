@@ -26,6 +26,7 @@ lazygit
 lazyjj
 libayatana-appindicator
 lua-language-server
+lxqt-openssh-askpass
 mise
 mpv
 neovim
@@ -42,6 +43,7 @@ tree-sitter
 ttf-firacode-nerd
 ttf-hack-nerd
 ttf-jetbrains-mono-nerd
+usage
 vpl-gpu-rt
 webkit2gtk-4.1
 wlsunset
