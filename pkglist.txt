@@ -31,5 +31,4 @@ ttf-jetbrains-mono-nerd
 webkit2gtk-4.1
 wlsunset
 zed
-zen-browser-bin
 zoxide
