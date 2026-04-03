@@ -1,10 +1,12 @@
 #!/bin/sh
-# Remove any files that may conflict with package installations
+echo "[pacman-hook] Removing conflicting files..."
 sudo rm -f /opt/zen-browser-bin/distribution/policies.json
 
-# Install user packages from pkglist.txt
+echo "[pacman-hook] Installing packages from pkglist.txt..."
 paru -S --needed --noconfirm - < ~/pkglist.txt || true
+echo "[pacman-hook] Package installation done."
 
-# Copy pacman hook to system directory
+echo "[pacman-hook] Copying pacman hook to system directory..."
 sudo mkdir -p /etc/pacman.d/hooks
 sudo cp ~/.config/pacman/update-pkglist.hook /etc/pacman.d/hooks/update-pkglist.hook
+echo "[pacman-hook] Done."

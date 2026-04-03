@@ -1,4 +1,7 @@
 #!/bin/sh
 # policies.json hash: {{ include "dot_config/zen-browser/policies.json" | sha256sum }}
+echo "[zen-policies] Creating distribution directory..."
 sudo mkdir -p /opt/zen-browser-bin/distribution
+echo "[zen-policies] Copying policies.json..."
 sudo cp ~/.config/zen-browser/policies.json /opt/zen-browser-bin/distribution/policies.json
+echo "[zen-policies] Done."
