@@ -1,4 +1,7 @@
 #!/bin/sh
+# Remove any files that may conflict with package installations
+sudo rm -f /opt/zen-browser-bin/distribution/policies.json
+
 # Install user packages from pkglist.txt
 paru -S --needed --noconfirm - < ~/pkglist.txt
 
