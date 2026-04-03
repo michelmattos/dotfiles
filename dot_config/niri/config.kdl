@@ -8,3 +8,9 @@ include "./cfg/misc.kdl"
 
 include "./noctalia.kdl"
 
+layout {
+    focus-ring {
+        off
+    }
+}
+

@@ -45,7 +45,7 @@
         "backgroundOpacity": 0,
         "barType": "simple",
         "capsuleColorKey": "none",
-        "capsuleOpacity": 0.8,
+        "capsuleOpacity": 0.98,
         "contentPadding": 2,
         "density": "default",
         "displayMode": "always_visible",
@@ -75,7 +75,7 @@
         "showOnWorkspaceSwitch": true,
         "showOutline": false,
         "useSeparateOpacity": false,
-        "widgetSpacing": 6,
+        "widgetSpacing": 3,
         "widgets": {
             "center": [
                 {
@@ -618,10 +618,6 @@
             },
             {
                 "enabled": true,
-                "id": "niri"
-            },
-            {
-                "enabled": true,
                 "id": "qt"
             },
             {
@@ -643,6 +639,10 @@
             {
                 "enabled": true,
                 "id": "code"
+            },
+            {
+                "enabled": true,
+                "id": "niri"
             }
         ],
         "enableUserTheming": false
