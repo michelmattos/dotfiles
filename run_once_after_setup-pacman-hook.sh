@@ -3,7 +3,7 @@
 sudo rm -f /opt/zen-browser-bin/distribution/policies.json
 
 # Install user packages from pkglist.txt
-paru -S --needed --noconfirm - < ~/pkglist.txt
+paru -S --needed --noconfirm - < ~/pkglist.txt || true
 
 # Copy pacman hook to system directory
 sudo mkdir -p /etc/pacman.d/hooks
