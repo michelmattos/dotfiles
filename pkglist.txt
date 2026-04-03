@@ -1,6 +1,5 @@
 appimagelauncher
 appimagetool-bin
-bind
 biome
 chezmoi
 claude-code
@@ -21,7 +20,6 @@ mpv
 neovim
 nwg-look
 openai-codex
-pacman-contrib
 qt5-wayland
 qt6ct
 swayidle
