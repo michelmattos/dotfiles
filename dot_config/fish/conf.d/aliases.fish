@@ -2,6 +2,7 @@
 set -gx EDITOR hx
 
 # Aliases
+alias hx="helix"
 alias n="nvim"
 alias ll="eza -lh --group-directories-first --icons=auto"
 alias la="eza -lah --group-directories-first --icons=auto"

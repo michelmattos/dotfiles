@@ -626,10 +626,6 @@
             },
             {
                 "enabled": true,
-                "id": "helix"
-            },
-            {
-                "enabled": true,
                 "id": "zed"
             },
             {
@@ -643,6 +639,10 @@
             {
                 "enabled": true,
                 "id": "zenBrowser"
+            },
+            {
+                "enabled": true,
+                "id": "helix"
             }
         ],
         "enableUserTheming": false
