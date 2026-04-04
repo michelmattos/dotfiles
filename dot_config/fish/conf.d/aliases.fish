@@ -1,5 +1,5 @@
 # Editor
-set -gx EDITOR hx
+set -gx EDITOR helix
 
 # Aliases
 alias hx="helix"
