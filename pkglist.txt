@@ -21,6 +21,7 @@ gutenprint
 helium-browser-bin
 helix
 imv
+iptables
 jujutsu
 lazygit
 lazyjj
@@ -32,6 +33,7 @@ mpv
 neovim
 nwg-look
 openai-codex
+opencode
 pacman-contrib
 qt5-wayland
 qt6ct
