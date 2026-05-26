@@ -1,10 +1,11 @@
+7zip
 appimagelauncher
 appimagetool-bin
 bind
 biome
 chezmoi
-claude-code
 cliphist
+codex-desktop
 foomatic-db
 foomatic-db-engine
 foomatic-db-gutenprint-ppds
@@ -32,7 +33,6 @@ mise
 mpv
 neovim
 nwg-look
-openai-codex
 opencode
 pacman-contrib
 qt5-wayland
