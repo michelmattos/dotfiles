@@ -40,7 +40,9 @@ qt6ct
 splix
 swayidle
 system-config-printer
+t3code-bin
 taplo-cli
+tokei
 tree-sitter
 ttf-firacode-nerd
 ttf-hack-nerd
@@ -51,4 +53,5 @@ webkit2gtk-4.1
 wlsunset
 zed
 zen-browser-bin
+zenity
 zoxide

@@ -45,6 +45,13 @@ window-rule {
     opacity 0.98
 }
 
+// T3 Code: opaque when focused, translucent when unfocused
+window-rule {
+    match app-id=r#"^t3code$"#
+    match is-focused=true
+    opacity 1.0
+}
+
 // Zen browser: no opacity
 window-rule {
     match app-id=r#"^zen$"#

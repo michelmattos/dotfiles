@@ -23,6 +23,7 @@ image/heif=imv.desktop
 image/qoi=imv.desktop
 image/x-png=imv.desktop
 image/pjpeg=imv.desktop
+x-scheme-handler/t3code=t3code.desktop
 
 [Added Associations]
 x-scheme-handler/http=zen.desktop;
